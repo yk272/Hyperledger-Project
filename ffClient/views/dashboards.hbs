@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Farm Fresh</title>
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">                                     
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="/stylesheets/hero-slider-style.css">                              
+    <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+    <link rel="stylesheet" href="/stylesheets/magnific-popup.css">                                 
+    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+    <link rel="stylesheet" href="/stylesheets/tooplate-style.css">        
+
+    
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/dashboards.css' />
+
+
+    
+</head>
+
+    <body>
+        
+        <!-- Content -->
+        <div class="cd-hero">
+
+            <!-- Navigation -->        
+            <div class="cd-slider-nav">
+                <nav class="navbar">
+                    <div class="tm-navbar-bg">
+                        
+                        <a class="navbar-brand text-uppercase" href="#"><i class="fa fa-shopping-cart tm-brand-icon"></i> <span class="text-success">Farm</span> <span class="text-warning"> Fresh</span></a>
+
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active selected">
+                                    <a class="nav-link" href="#0" data-no="1">HOME <span class="sr-only">(current)</span></a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="2">AGENCY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="3">CENTRAL INSPECTION CENTER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="4">STATE INSPECTION CENTER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="5">ZONAL INSPECTION CENTER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#0" data-no="6">RETAILER</a>
+                                </li>
+                                
+                            </ul>
+                        </div>                        
+                    </div>
+
+                </nav>
+            </div> 
+
+            <ul class="cd-hero-slider">
+
+                <!-- Page 1 Gallery -->
+                <li class="selected">                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <div class="tm-img-gallery gallery-one">
+
+                                   
+                                    <h1 class="container"><b>WELCOME</b></h1>
+
+                                     <style>
+                                       .container {
+                                           color:rgb(50, 219, 20);
+	                                        display: inline-table;
+                                            vertical-align:middle;
+                                            line-height:100%;
+                                            position: absolute;
+                                            font-size: 50px;
+                                       } 
+                                    </style>
+                                                                    
+                                    
+                                   <style>
+                                       body{background-image: url("/images/plainblack.jpeg")}
+                                   </style>
+                                                                                                           
+                                </div>                                 
+                            </div>
+                        </div>                                                    
+                    </div>                    
+                </li>
+
+                <!-- Page 2 Agency -->
+                <li>                    
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
+                            <div class="tm-img-gallery-container">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Agency</span></h2>
+                                        <p class="tm-text"><span class="tm-white">Add all the product details below.</span>
+                                        </p>
+                                    </div>
+                                   
+                                       {{!-- here is the agency form  --}}
+                                        <div class="tm-flex tm-contact-container">                                
+
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+
+                                        <form class="tm-contact-form">
+                                                    <div class="form-group">
+                                                        <input type="text" id="senderID" name="Sender ID" class="form-control" placeholder="Sender ID"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="privateagency" name="Agency Private Key" class="form-control" placeholder="Agency Private Key"  required/>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="text" id="crateid" name="Crate Number" class="form-control" placeholder="Crate id"  required/>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        
+                                                        <select name="Product Type" id="product" class="form-control" placeholder="Product Type" required/>
+                                                        <option value="nil">Choose Product Name</option> 
+                                                        <option value="Orange">Orange</option>
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="Grape">Grape</option>
+                                                        </select>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <div class="form-group">
+                                                        <select name="crateweight" id="weight" class="form-control" placeholder="Net Weight" required/>
+                                                        <option value="nil">Choose Net Weight</option> 
+                                                        <option value="10kg">10kg</option>
+                                                        <option value="20kg">20kg</option>
+                                                        <option value="30kg">30kg</option>
+                                                        <option value="40kg">40kg</option>
+                                                        <option value="50kg">50kg</option>
+                                                        </select>
+                                                   </div>
+                                                     
+                                                     <div class="form-group">
+                                                        <input type="text" id="dop" name="date of packing" class="form-control" onfocus="(this.type='date')" placeholder="Date of Packing"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        
+                                                        <select name="State" id="fromstate" class="form-control" aria-placeholder="State" required/>
+                                                            <option value="">choose place of origin</option>
+                                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                            <option value="Assam">Assam</option>
+                                                            <option value="Bihar">Bihar</option>
+                                                            <option value="Chandigarh">Chandigarh</option>
+                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                                            <option value="Daman and Diu">Daman and Diu</option>
+                                                            <option value="Delhi">Delhi</option>
+                                                            <option value="Goa">Goa</option>
+                                                            <option value="Gujarat">Gujarat</option>
+                                                            <option value="Haryana">Haryana</option>
+                                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                            <option value="Jharkhand">Jharkhand</option>
+                                                            <option value="Karnataka">Karnataka</option>
+                                                            <option value="Kerala">Kerala</option>
+                                                            <option value="Lakshadweep">Lakshadweep</option>
+                                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                            <option value="Maharashtra">Maharashtra</option>
+                                                            <option value="Manipur">Manipur</option>
+                                                            <option value="Meghalaya">Meghalaya</option>
+                                                            <option value="Mizoram">Mizoram</option>
+                                                            <option value="Nagaland">Nagaland</option>
+                                                            <option value="Orissa">Orissa</option>
+                                                            <option value="Pondicherry">Pondicherry</option>
+                                                            <option value="Punjab">Punjab</option>
+                                                            <option value="Rajasthan">Rajasthan</option>
+                                                            <option value="Sikkim">Sikkim</option>
+                                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                                            <option value="Tripura">Tripura</option>
+                                                            <option value="Uttaranchal">Uttaranchal</option>
+                                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                            <option value="West Bengal">West Bengal</option>
+
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn" onclick="agencyAdd(event)">Add details</button>  
+                                                </form>  
+                                                </div>
+                                                </div>                                
+                            </div>
+                        </div>                      
+                    </div>
+                </li>
+
+
+
+                <!-- Page 3 Central Inspection Center -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="3" data-page-type="gallery">                        
+                            <div class="tm-img-gallery-container">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Central Inspection Center</span></h2>
+                                        <p class="tm-text"><span class="tm-white">Update time info by product id.</span>
+                                        </p>                                     
+                                    </div>
+                                   
+                                                                           {{!-- here is the Central Inspection Center form  --}}
+                                        <div class="tm-flex tm-contact-container">                                
+
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+
+                                        <form class="tm-contact-form">
+
+                                                     <div class="form-group">
+                                                        <input type="text" id="CentralID" name="Sender ID" class="form-control" placeholder="Sender ID"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="privateCentral" name="Central Private Key" class="form-control" placeholder="Central Private Key"  required/>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="text" id="crateidC" name="Crate Number" class="form-control" placeholder="Crate Number"  required/>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        
+                                                        <select name="Product Type" id="productC" class="form-control" placeholder="Product Type" required/>
+                                                        <option value="nil">Choose Product Name</option> 
+                                                        <option value="Orange">Orange</option>
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="Grape">Grape</option>
+                                                         </select>
+                                                    </div>
+                                                    
+                                                        <div class="form-group">
+                                                        <div class="form-group">
+                                                        <select name="crateweight" id="weightC" class="form-control" placeholder="Net Weight" required/>
+                                                        <option value="nil">Choose Net Weight</option> 
+                                                        <option value="10kg">10kg</option>
+                                                        <option value="20kg">20kg</option>
+                                                        <option value="30kg">30kg</option>
+                                                        <option value="40kg">40kg</option>
+                                                        <option value="50kg">50kg</option>
+                                                       
+                                                        </select>
+                                                   </div>
+                                                     
+                                                    
+                                                    <div class="form-group">
+                                                        <input type="text" id="doaCentral" name="arrival date" onfocus="(this.type='date')" class="form-control" placeholder="Arrival Date"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="dodCentral" name="dispatch date" onfocus="(this.type='date')" class="form-control" placeholder="Dispatch Date"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        {{!-- <input type="text" id="place" name="place" class="form-control" placeholder="place"  required/> --}}
+                                                        <select name="State" id="tostate" class="form-control" aria-placeholder="To State" required/>
+                                                            <option value="">Choose Target State</option>
+                                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                            <option value="Assam">Assam</option>
+                                                            <option value="Bihar">Bihar</option>
+                                                            <option value="Chandigarh">Chandigarh</option>
+                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                                            <option value="Daman and Diu">Daman and Diu</option>
+                                                            <option value="Delhi">Delhi</option>
+                                                            <option value="Goa">Goa</option>
+                                                            <option value="Gujarat">Gujarat</option>
+                                                            <option value="Haryana">Haryana</option>
+                                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                            <option value="Jharkhand">Jharkhand</option>
+                                                            <option value="Karnataka">Karnataka</option>
+                                                            <option value="Kerala">Kerala</option>
+                                                            <option value="Lakshadweep">Lakshadweep</option>
+                                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                            <option value="Maharashtra">Maharashtra</option>
+                                                            <option value="Manipur">Manipur</option>
+                                                            <option value="Meghalaya">Meghalaya</option>
+                                                            <option value="Mizoram">Mizoram</option>
+                                                            <option value="Nagaland">Nagaland</option>
+                                                            <option value="Orissa">Orissa</option>
+                                                            <option value="Pondicherry">Pondicherry</option>
+                                                            <option value="Punjab">Punjab</option>
+                                                            <option value="Rajasthan">Rajasthan</option>
+                                                            <option value="Sikkim">Sikkim</option>
+                                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                                            <option value="Tripura">Tripura</option>
+                                                            <option value="Uttaranchal">Uttaranchal</option>
+                                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                            <option value="West Bengal">West Bengal</option>
+
+                                                        </select>
+                                                    </div>
+                                                   
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn" onclick="Central(event)">Verify Product</button>  
+                                                
+                                                </form>  
+                                                </div>
+                                                </div>
+                                    
+                                   
+                                                                                                                                 
+                                                                
+                            </div> <!-- .tm-img-gallery-container -->
+                        </div>         
+                    </div>  
+                </li>
+
+
+
+                <!-- Page 4 State Inspection Center -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="4" data-page-type="gallery">                        
+                            <div class="tm-img-gallery-container">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">State Inspection Center</span></h2>
+                                        <p class="tm-text"><span class="tm-white">Update time info by product id.</span>
+                                        </p>                                     
+                                    </div>
+                                   
+                                                                           {{!-- here is the State Inspection Center form  --}}
+                                        <div class="tm-flex tm-contact-container">                                
+
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+
+                                        <form class="tm-contact-form">
+                                                    
+                                                    <div class="form-group">
+                                                        <input type="text" id="stateID" name="State " class="form-control" placeholder="State ID"  required/>
+                                                        
+                                                    </div>
+                                                        
+                                                    <div class="form-group">
+                                                        <input type="text" id="privateState" name="State Private Key" class="form-control" placeholder="State Private Key"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="crateidS" name="Crate Number" class="form-control" placeholder="Crate Number"  required/>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        
+                                                        <select name="Product Type" id="productS" class="form-control" placeholder="Product Type" required/>
+                                                        <option value="nil">Choose Product Name</option> 
+                                                        <option value="Orange">Orange</option>
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="Grape">Grape</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                        <select name="crateweight" id="weightS" class="form-control" placeholder="Net Weight" required/>
+                                                        <option value="nil">Choose Net Weight</option> 
+                                                        <option value="10kg">10kg</option>
+                                                        <option value="20kg">20kg</option>
+                                                        <option value="30kg">30kg</option>
+                                                        <option value="40kg">40kg</option>
+                                                        <option value="50kg">50kg</option>
+                                                       
+                                                        </select>
+                                                   </div>
+                                                     
+                                                    <div class="form-group">
+                                                        <input type="text" id="doastate" name="arrival date" onfocus="(this.type='date')" class="form-control" placeholder="Arrival Date"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="dodstate" name="date of dispatch" onfocus="(this.type='date')" class="form-control" placeholder="Date of Dispatch"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        {{!-- <input type="text" id="place" name="place" class="form-control" placeholder="place"  required/> --}}
+                                                        <select name="Zone" id="tozone" class="form-control" aria-placeholder="Zone" required/>
+                                                            <option value="">choose target zone</option>
+                                                            <option value="Central">Central Zone</option>
+                                                            <option value="East">East Zone</option>
+                                                            <option value="North">North Zone</option>
+                                                            <option value="South">South Zone</option>
+                                                            <option value="West">West Zone</option>
+                                                            
+                                                            </select>
+                                                    </div>
+                                                                                        
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn" onclick="State(event)">Add data</button>  
+                                                
+                                                </form>  
+                                                </div>
+                                                </div>
+                                                                
+                            </div> <!-- .tm-img-gallery-container -->
+                        </div>         
+                    </div>  
+                </li>
+
+
+
+                <!-- Page 5 Zonal Inspection Center -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content" data-page-no="5" data-page-type="gallery">                        
+                            <div class="tm-img-gallery-container">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    
+                                    <div class="tm-img-gallery-info-container">                                    
+                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Zonal Inspection Center</span></h2>
+                                        <p class="tm-text"><span class="tm-white">Update time info by product id.</span>
+                                        </p>                                     
+                                    </div>
+                                   
+                                              {{!-- here is the Zonal Inspection Center form  --}}
+                                        <div class="tm-flex tm-contact-container">                                
+
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+
+                                        <form class="tm-contact-form">
+                                                    <div class="form-group">
+                                                        <select name="Zone" id="zoneID" class="form-control" aria-placeholder="Zone" required/>
+                                                            <option value="">Select ZoneID</option>
+                                                            <option value="Central">Central Zone</option>
+                                                            <option value="East">East Zone</option>
+                                                            <option value="North">North Zone</option>
+                                                            <option value="South">South Zone</option>
+                                                            <option value="West">West Zone</option>
+                                                            
+                                                            </select>
+                                                            </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="privateZone" name="pvtkey" class="form-control" placeholder="Zonal privateKey"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="crateidZ" name="product_idDis" class="form-control" placeholder="Crate id"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        
+                                                        <select name="Product Type" id="productZ" class="form-control" placeholder="Product Type" required/>
+                                                        <option value="nil">Choose Product Name</option> 
+                                                        <option value="Orange">Orange</option>
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="Grape">Grape</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                        <select name="crateweight" id="weightZ" class="form-control" placeholder="Net Weight" required/>
+                                                        <option value="nil">Choose Net Weight</option> 
+                                                        <option value="10kg">10kg</option>
+                                                        <option value="20kg">20kg</option>
+                                                        <option value="30kg">30kg</option>
+                                                        <option value="40kg">40kg</option>
+                                                        <option value="50kg">50kg</option>
+                                                       
+                                                        </select>
+                                                   </div>
+                                                     
+                                                    <div class="form-group">
+                                                        <input type="text" id="doazone" name="obtimestamp" onfocus="(this.type='date')" class="form-control" placeholder="Arrival Date"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" id="dodzone" name="droptimestamp" onfocus="(this.type='date')" class="form-control" placeholder="Dispatch Date"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        {{!-- <input type="text" id="place" name="place" class="form-control" placeholder="place"  required/> --}}
+                                                        <select name="retailer" id="toretailer" class="form-control" aria-placeholder="Zone" required/>
+                                                            <option value="">choose target Retailer</option>
+                                                            <option value="Retailer1">Retailer 1</option>
+                                                            <option value="Retailer2">Retailer 2</option>
+                                                            <option value="Retailer3">Retailer 3</option>
+                                                            <option value="Retailer4">Retailer 4</option>
+                                                            <option value="Retailer5">Retailer 5</option>
+                                                            
+                                                            </select>
+                                                    </div>
+
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn" onclick="Zonal(event)">Add data</button>  
+                                                
+                                                </form>  
+                                                </div>
+                                                </div>
+                                                                
+                            </div> <!-- .tm-img-gallery-container -->
+                        </div>         
+                    </div>  
+                </li>
+
+
+                
+                
+                                {!-- <!-- Page 6 Retailer -->
+                <li>
+                    <div class="cd-full-width">
+                        <div class="container-fluid js-tm-page-content tm-page-width tm-pad-b" data-page-no="6">
+                            <div class="row tm-white-box-margin-b">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
+                                            <h2 class="tm-text-title">In-Store tracking</h2>
+                                            <p class="tm-text">Track the whereabouts of your items.</p>
+
+   <div class="row tm-white-box-margin-b">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        <div class="form-group">
+                                            {{!-- <input type="text" id="place" name="place" class="form-control" placeholder="place"  required/> --}}
+                                            <select name="retailer" id="retailer" class="form-control" aria-placeholder="Zone" required />
+                                            <option value="">Select RetailerID</option>
+                                            <option value="Retailer1">Retailer 1</option>
+                                            <option value="Retailer2">Retailer 2</option>
+                                            <option value="Retailer3">Retailer 3</option>
+                                            <option value="Retailer4">Retailer 4</option>
+                                            <option value="Retailer5">Retailer 5</option>
+                                        
+                                            </select>
+                                            <button type="submit" class="pull-xs-right tm-submit-btn" onclick="getProducts(event)">View Stock</button>
+                                        </div>
+
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Crate ID</th>
+        <th>Product Name</th>
+        <th>Weight</th>
+      </tr>
+    </thead>
+    <tbody id="productlist">
+      <tr>
+        <td> </td>
+        
+      </tr>
+      <tr>
+        <td> </td>
+        
+      </tr>
+      <tr>
+        <td> </td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                            
+                            <div class="row tm-white-box-margin-b">
+                                <div class="col-xs-12">
+                                    <div class="tm-flex">
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">Please enter the product id to know more.</h2>
+                                            
+                                                   
+                                        <div class="tm-flex tm-contact-container">                                
+
+                                            <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
+
+                                        <form class="tm-contact-form">
+                                            <div class="form-group">
+                                                        {{!-- <input type="text" id="place" name="place" class="form-control" placeholder="place"  required/> --}}
+                                                        <select name="retailer" id="retailerID" class="form-control" aria-placeholder="Zone" required/>
+                                                            <option value="">Select RetailerID</option>
+                                                            <option value="Retailer1">Retailer 1</option>
+                                                            <option value="Retailer2">Retailer 2</option>
+                                                            <option value="Retailer3">Retailer 3</option>
+                                                            <option value="Retailer4">Retailer 4</option>
+                                                            <option value="Retailer5">Retailer 5</option>
+                                                            
+                                                            </select>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="text" id="privateRetailer" name="Retailer Private Key" class="form-control" placeholder="Retailer Private Key"  required/>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="text" id="crateidR" name="Crate id" class="form-control" placeholder="Crate Id"  required/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select name="crateweight" id="weightR" class="form-control" placeholder="Net Weight" required/>
+                                                        <option value="nil">Choose Net Weight</option> 
+                                                        <option value="10kg">10kg</option>
+                                                        <option value="20kg">20kg</option>
+                                                        <option value="30kg">30kg</option>
+                                                        <option value="40kg">40kg</option>
+                                                        <option value="50kg">50kg</option>
+                                                       
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select name="Product Type" id="productR" class="form-control" placeholder="Product Type" required/>
+                                                        <option value="nil">Choose Product Name</option> 
+                                                        <option value="Orange">Orange</option>
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="Grape">Grape</option>
+                                                       
+                                                        </select>
+                                                    </div>
+                                        
+                                                    
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn" onclick="Retrieve(event)">View Details</button>  
+                                                    <button type="submit" class="pull-xs-right tm-submit-btn" onclick="Delete(event)">Delete Product</button>
+                                                
+                                                </form>  
+                                                </div>
+                                                </div>
+
+                                              </div>
+                                        <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
+                                            <h2 class="tm-text-title">View the product details</h2>
+                                            <p class="tm-text">
+                                                <table>
+                                                <tc>
+                                                <td>Place of Origin </td>
+                                                <td><input type="text" id="origin"/></td>
+                                                
+                                                </tc>
+                                                <tr>
+                                                  <td>Date of Packing </td>
+                                                <td> <input type="text" id="packing"></input></td>
+                                                
+                                                </tr>
+                                                <tr>
+                                                <td>Central Arrival Date </td>
+                                                <td><input type="text" id="Carrival"/></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Central Dispatch Date </td>
+                                                <td><input type="text" id="Cdispatch"></input></td>
+                                                </tr>
+                                                <tr>
+                                                <td>State Arrival Date </td>
+                                                <td><input type="text" id="Sarrival"></input></td>
+                                                </tr>
+                                                <tr>
+                                                <td>State Dispatch Date </td>
+                                                <td><input type="text" id="Sdispatch"></input></td>
+                                                </tr>
+                                                <tr>
+                                                <td>Zonal Arrival Date</td>
+                                                <td><input type="text" id="Zarrival"></input></td>
+                                                </tr>
+                                                <tc>
+                                                <td>Zonal Dispatch Date</td>
+                                                <td> <input type="text" id="Zdispatch"></input></td>
+                                                </tc>
+                                                
+                                                </table>
+
+                                            </p>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
+                                                
+                        </div>              
+                    </div> <!-- .cd-full-width -->
+
+                </li>
+
+            </ul> <!-- .cd-hero-slider -->
+
+
+            <footer class="tm-footer">
+            
+               
+                <p class="tm-copyright-text">Copyright &copy; 2019 FF
+                
+                </p>
+
+            </footer>
+                    
+        </div> <!-- .cd-hero -->
+        
+
+        <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+        
+        <!-- load JS files -->
+        <script src="/javascripts/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) --> 
+        <script src="/javascripts/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+        <script src="/javascripts/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
+        <script src="/javascripts/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+        
+        <script>
+
+            function adjustHeightOfPage(pageNo) {
+
+                var offset = 80;
+                var pageContentHeight = 0;
+
+                var pageType = $('div[data-page-no="' + pageNo + '"]').data("page-type");
+
+                if( pageType != undefined && pageType == "gallery") {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .tm-img-gallery-container").height();
+                }
+                else {
+                    pageContentHeight = $(".cd-hero-slider li:nth-of-type(" + pageNo + ") .js-tm-page-content").height() + 20;
+                }
+
+                if($(window).width() >= 992) { offset = 120; }
+                else if($(window).width() < 480) { offset = 40; }
+               
+                // Get the page height
+                var totalPageHeight = $('.cd-slider-nav').height()
+                                        + pageContentHeight + offset
+                                        + $('.tm-footer').height();
+
+                // Adjust layout based on page height and window height
+                if(totalPageHeight > $(window).height()) 
+                {
+                    $('.cd-hero-slider').addClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", totalPageHeight + "px");
+                }
+                else 
+                {
+                    $('.cd-hero-slider').removeClass('small-screen');
+                    $('.cd-hero-slider li:nth-of-type(' + pageNo + ')').css("min-height", "100%");
+                }
+            }
+
+            /*
+                Everything is loaded including images.
+            */
+            $(window).load(function(){
+
+                adjustHeightOfPage(1); // Adjust page height
+
+                
+
+                /* Collapse menu after click 
+                -----------------------------------------*/
+                $('#tmNavbar a').click(function(){
+                    $('#tmNavbar').collapse('hide');
+
+                    adjustHeightOfPage($(this).data("no")); // Adjust page height       
+                });
+
+                /* Browser resized 
+                -----------------------------------------*/
+                $( window ).resize(function() {
+                    var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+                    
+                    // wait 3 seconds
+                    setTimeout(function() {
+                        adjustHeightOfPage( currentPageNo );
+                    }, 1000);
+                    
+                });
+        
+                // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
+                $('body').addClass('loaded');
+                           
+            });
+
+            
+
+        </script>     
+        
+<script src='/javascripts/main.js'></script>       
+
+</body>
+</html>

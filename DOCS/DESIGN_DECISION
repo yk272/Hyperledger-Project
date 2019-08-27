@@ -1,0 +1,32 @@
+
+------------------------------------------------------------------Farm Fresh----------------------------------------------------------------------------------------------------
+
+Note:
+
+Farm Fresh contains 5 levels for a transparent flow of fruits from the farmer til it reaches the retailer and ultimately the consumer. It includes Agency (collects goods from farmers and transfers to central authority), Central Inspection Center (verify the details and distributes to various states) , State Inspection Center (verify their share and distribute to the zones under them), Zonal Inspection Center (verify and distribute to retailers) and Retailer(verify each crate and sold it out).
+
+Each product has a unique crate id, product type and weight.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Addressing Scheme :
+   Here first six characters is the hash of Family_Name, next six characters are the hash of Product_Type, then the next 4 characters are the hash of Product_Weight and the last 54 characters are the hash of the Crate_id. 
+
+We  decided to store all the details in a single address because each participants can able to append the data on it. But each participats owned a different private key to access data
+
+Address = nameHash.slice(0,6) +pHash.slice(0,6)+wHash.slice(0,4)+sHash.slice(0,54)
+
+ie, address = hash(Family_Name).slice(0,6)+hash(Product_Type).slice(0,6) + hash(Product_Weight).slice(0,4) + hash(Crate_id).slice(0,54)
+Hashing is done using SHA512.
+
+2. Transaction Family:
+    We have only one transaction family named "ff"
+
+
+4. Node's of the network :
+   Central Inspection Center,State Inspection Centers,Zonal Inspection Centers
+
+7. Permissioning: 
+   Note that, in this application, we have designed in such a way that when the network turns up, 5 sets of public and private keys are produced for 5 participants mentioned at the beginning of this document. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
